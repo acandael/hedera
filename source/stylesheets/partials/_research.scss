@@ -1,0 +1,26 @@
+div.research {
+  @include outer-container(80%);
+  header.pageheader {
+    margin-top: 2.25em;
+    margin-bottom: 3.375em;
+    h1 {
+      text-align: center;
+    }
+  }
+
+  section.health-sociology, section.ethnic-diversity {
+    @include span-columns(6);
+    aside {
+      position: absolute;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 2.25em;
+    }
+    h2, h3 {
+      text-align: center;
+      margin-top: 2.25em;
+    }
+  }
+}

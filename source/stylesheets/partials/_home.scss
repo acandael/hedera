@@ -20,6 +20,7 @@ div.banner {
 
 div.row {
   @include outer-container(80%);
+  @include clearfix;
   margin-top: 3.375em;
 
   section.news, section.about {
@@ -39,7 +40,7 @@ div.row {
     aside {
       @include span-columns(1, $display: block-collapse);
       float: left;
-      margin-right: 0;
+      margin-right: 1em;
       padding: 0;
     }
   }
