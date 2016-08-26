@@ -15,6 +15,25 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="wrapper">
+      <%= partial "partials/nav" %>
+      <%= yield %>
+    </div><!-- .wrapper -->
+    <%= partial "partials/footer" %>
   </body>
+  <script>
+    $(document).ready(function() {
+      var menuToggle = $('#js-mobile-menu').unbind();
+      $('#js-navigation-menu').removeClass("show");
+
+      menuToggle.on('click', function(e) {
+        e.preventDefault();
+        $('#js-navigation-menu').slideToggle(function(){
+          if($('#js-navigation-menu').is(':hidden')) {
+            $('#js-navigation-menu').removeAttr('style');
+          }
+        });
+      });
+    });
+  </script>
 </html>
