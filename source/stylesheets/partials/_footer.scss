@@ -27,6 +27,13 @@ html, body {
 
 .footer {
   $large-screen: 50em !default;
+  width: 100%;
+  .center {
+    @include clearfix;
+    clear: both;
+    margin: 0 auto;
+    display: block;
+  }
 
   .footer-logo {
     margin-bottom: 1em;
