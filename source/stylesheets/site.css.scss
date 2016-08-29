@@ -6,12 +6,10 @@
 @import "neat/neat";
 
 @import "partials/nav";
+@import "partials/layout";
 @import "partials/home";
 @import "partials/research";
 @import "partials/project";
 @import "partials/footer";
 
-span.action {
-  color: $green;
-}
 
