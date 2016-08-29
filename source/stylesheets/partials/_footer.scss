@@ -9,12 +9,12 @@ html, body {
  height: 100%;
 }
 
-.wrapper-for-content-outside-of-footer:after {
+.wrapper:after {
   content: "";
   display: block;
 }
 
-.footer, .wrapper-for-content-outside-of-footer:after {
+.footer, .wrapper:after {
   $large-screen: 50em !default;
   height: 12em;
   padding: 2.25em;
@@ -28,6 +28,7 @@ html, body {
 .footer {
   $large-screen: 50em !default;
   width: 100%;
+  border-top: 1px solid $light-gray;
   .center {
     @include clearfix;
     clear: both;
