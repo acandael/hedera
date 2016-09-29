@@ -6,3 +6,16 @@ i.fa {
   color: $green;
   margin-right: .5em;
 }
+
+i.right {
+  margin-left: .5em;
+}
+
+h1 {
+  font-size: modular-scale(2);
+}
+
+h2 {
+  font-size: modular-scale(1);
+}
+
