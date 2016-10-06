@@ -34,9 +34,6 @@ div.row {
       margin-bottom: 0;
     }
 
-    p {
-      color: $medium-gray;
-    }
     aside {
       @include span-columns(1, $display: block-collapse);
       float: left;
