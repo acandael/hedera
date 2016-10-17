@@ -1,14 +1,21 @@
 div.contact {
   @include outer-container(80%);
   article {
-    margin-top: 5.063em;
+    @include media($medium-screen) {
+      margin-top: 5.063em;
+    }
     aside {
-      @include span-columns(6);
-      float: right;
+      @include media($medium-screen) {
+        @include span-columns(6);
+        float: right;
+      }
     }
     .content {
-      @include span-columns(6);
-      float: left;
+      @include media($medium-screen) {
+        @include span-columns(6);
+        float: left;
+      }
+      margin-bottom: 2.25em;
     }
   }
 }
