@@ -1,7 +1,9 @@
 div.about {
   @include outer-container(80%);
   div.content {
-    @include span-columns(6);
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
 
     h2 {
       margin-top: 2.25em;
@@ -15,7 +17,9 @@ div.about {
     }
   }
   aside.sidebar {
-    @include span-columns(4);
-    @include shift(2);
+    @include media($medium-screen) {
+      @include span-columns(4);
+      @include shift(2);
+    }
   }
 }
