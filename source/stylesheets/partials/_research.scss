@@ -2,13 +2,18 @@ div.research {
   @include outer-container(80%);
 
   section.health-sociology, section.ethnic-diversity {
-    @include span-columns(6);
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
     aside {
       position: absolute;
     }
     img {
+      @include media($medium-screen) {
+        margin: 0 auto;
+      }
+      margin: 2.25em auto;
       display: block;
-      margin: 0 auto;
       margin-bottom: 2.25em;
     }
     h2, h3 {

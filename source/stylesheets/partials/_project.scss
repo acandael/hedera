@@ -4,13 +4,20 @@ div.project {
     margin-top: 5.063em;
   }
   aside {
-    @include span-columns(4);
-    float: right;
+    @include media($medium-screen) {
+      @include span-columns(4);
+      float: right;
+    }
+    figure {
+      margin-bottom: 2.25em;
+    }
   }
 
   .content {
-    @include span-columns(6);
-    float: left;
+    @include media($medium-screen) {
+      @include span-columns(6);
+      float: left;
+    }
 
     header {
       margin-bottom: 3.375em;
