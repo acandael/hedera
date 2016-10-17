@@ -24,7 +24,11 @@ div.row {
   margin-top: 3.375em;
 
   section.news, section.about {
-    @include span-columns(6);
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
+    @include clearfix;
+    margin-bottom: 2.25em;
     h2 {
       text-align: center;
     }
