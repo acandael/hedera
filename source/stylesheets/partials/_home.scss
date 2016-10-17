@@ -39,10 +39,13 @@ div.row {
     }
 
     aside {
-      @include span-columns(1, $display: block-collapse);
-      float: left;
-      margin-right: 1em;
-      padding: 0;
+      display: none;
+      @include media($medium-screen) {
+        @include span-columns(1, $display: block-collapse);
+        float: left;
+        margin-right: 1em;
+        padding: 0;
+      }
     }
   }
 
