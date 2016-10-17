@@ -6,17 +6,24 @@ div.news {
   }
 
   div.news-item {
-    @include span-columns(8 of 12);
-    @include shift(2);
+    @include media($medium-screen) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+    }
     margin-bottom: 3.375em;
     div.content {
-      @include span-columns(6 of 8);
-      float: right;
+      @include media($medium-screen) {
+        @include span-columns(6 of 8);
+        float: right;
+      }
 
     }
     aside {
-      @include span-columns(2 of 8);
-      float: left;
+      display: none;
+      @include media($medium-screen) {
+        @include span-columns(2 of 8);
+        float: left;
+      }
     }
   }
 }
